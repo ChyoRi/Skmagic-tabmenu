@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+@import './variable.scss';
+@import './common.scss';
+@import './component.scss';
+
+
+h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.all_view {
+    margin-right: 30px;
+
+    & > a {
+        position: relative;
+        font-size: 16px;
+
+        &::after {
+            content: '\003E';
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            margin-left: 15px;
+            transform: translateY(-50%);
+        }
+    
+    }
+}
