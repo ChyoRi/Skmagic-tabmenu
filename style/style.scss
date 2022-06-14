@@ -7,24 +7,29 @@
 
 h2 {
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 30px;
 }
 
 .all_view {
-    margin-right: 30px;
+    margin-right: 20px;
 
     & > a {
         position: relative;
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $color_darkgray;
 
         &::after {
-            content: '\003E';
+            content: '';
+            @include backGround(url('../images/right_arrow.png'));
             position: absolute;
             top: 50%;
-            right: -15px;
-            margin-left: 15px;
+            right: -18px;
+            width: 8px;
+            height: 14px;
             transform: translateY(-50%);
         }
     
     }
+    
 }
