@@ -25,17 +25,21 @@ button {
 
 body {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   max-width: 1280px;
   margin: 0 auto;
   font-family: "Noto Sans KR", sans-serif;
 }
 
+main {
+  width: 100%;
+}
+
 /* 탭메뉴 버튼 */
 .main_tabbtn_list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 .main_tabbtn_list > li {
@@ -53,7 +57,7 @@ body {
 
 .sub_tabbtn {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   justify-content: space-between;
   margin-bottom: 3rem;
@@ -61,7 +65,7 @@ body {
 
 .sub_tabbtn_list {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
 }
 .sub_tabbtn_list > li {
@@ -87,8 +91,8 @@ body {
 /* 탭메뉴 내용 */
 .tab_cont_list {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .left_cont_wrap {
@@ -108,9 +112,6 @@ body {
   transform: translateX(-50%);
 }
 .left_txt > h3 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 700;
@@ -120,15 +121,6 @@ body {
   font-size: 1.8rem;
   font-weight: 300;
   text-align: center;
-}
-
-.right_cont_wrap {
-  margin-left: 2rem;
-}
-
-.right_cont_wrap {
-  width: calc(100% - 81.8rem);
-  margin-left: 2rem;
 }
 
 .right_top_cont {
@@ -164,8 +156,8 @@ body {
 
 .price_wrap {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: space-between;
+  justify-content: flex-start;
   position: absolute;
   bottom: 0;
   left: 0;
