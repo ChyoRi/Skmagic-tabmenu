@@ -176,7 +176,7 @@ main {
 }
 
 .price_wrap {
-    @include flex(space-between);
+    @include flex(center, space-between);
     position: absolute;
     bottom: 0;
     left: 0;
