@@ -24,9 +24,6 @@ button {
 }
 
 body {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   max-width: 1280px;
   margin: 0 auto;
   font-family: "Noto Sans KR", sans-serif;
@@ -92,11 +89,12 @@ main {
 .tab_cont_list {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .left_cont_wrap {
   position: relative;
+  margin-right: 2rem;
   border-radius: 10px;
 }
 .left_cont_wrap > a {

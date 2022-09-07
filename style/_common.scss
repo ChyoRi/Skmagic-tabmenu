@@ -42,7 +42,6 @@ button {
 }
 
 body {
-    @include flex();
     max-width: 1280px;
     margin: 0 auto;
     font-family: 'Noto Sans KR', sans-serif;;
@@ -107,11 +106,12 @@ main {
 /* 탭메뉴 내용 */
 
 .tab_cont_list {
-    @include flex(flex-start, space-between);
+    @include flex();
 }
 
 .left_cont_wrap {
     position: relative;
+    margin-right: 2rem;
     border-radius: $border_radius_small;
 
     & > a {
